@@ -23,8 +23,8 @@ body {
   height: auto;
   width: 100%;
   position: fixed;
-  z-index: 100;
-  background-color: #eee0cb;
+  z-index: 1;
+  background-color: #ebcfb2;
 }
 .nav-bar {
   /* background-color: #eee0cb; */
@@ -40,8 +40,8 @@ body {
 }
 .nav-bar .brand a {
   font-family: "Flash Back - Demo", sans-serif;
-  font-size: 3rem;
-  color: #280003;
+  font-size: 25px;
+  color: black;
 }
 .nav-bar .nav-list {
   display: flex;
@@ -49,7 +49,7 @@ body {
   justify-content: center;
 }
 .nav-bar .nav-list .hamburger {
-  border: 2px solid gray;
+  border: 2px solid #280003;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -101,8 +101,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: rgb(46, 45, 45);
-  padding: 5rem 0;
+  background-color: transparent;
+  padding: 20px 0;
   transform: translateY(-100%);
   transition: 0.3s ease transform;
   text-align: center;
@@ -128,7 +128,7 @@ body {
   transition: 0.3s ease transform;
 }
 .nav-bar .nav-list ul li a {
-  font-size: 1.8rem;
+  font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: #280003;
@@ -158,21 +158,22 @@ body {
   text-align: center;
 }
 .hero .hero-info .hero-info-heading {
-  font-size: 5rem;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: normal;
   color: #280003;
 }
 .hero .hero-info .hero-info-subheading {
-  font-size: 1.6rem;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  margin-top: 10px;
   color: #280003;
 }
 .hero .hero-info .hero-info-button {
   margin-top: 30px;
-  padding: 2rem 5rem;
+  padding: 32px;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 18px;
   text-transform: uppercase;
   color: #280003;
   text-decoration: none;
@@ -206,36 +207,36 @@ body {
   /* background-color: #ffff; */
 }
 .about .about-info .about-info-heading {
-  font-size: 4rem;
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   color: #280003;
 }
 .about .about-info .about-info-desc {
-  font-size: 1.3rem;
+  font-size: 15px;
   line-height: 2rem;
   margin-top: 10px;
 }
 .about .about-info .about-info-button {
-  padding: 1.6rem 2.6rem;
+  padding: 20px;
   display: inline-block;
   background-color: rgb(164, 164, 164);
   color: #280003;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 .about .about-img {
-  margin-top: 50px;
+  margin-top: 100px;
   display: block;
 }
 .about .about-img .about-img-wrapper {
   margin-top: 50px;
   height: auto;
-  max-width: 400px;
+  max-width: 300px;
   position: relative;
   display: inline-block;
 }
@@ -257,6 +258,7 @@ body {
 /* End About Section  */
 hr {
   color: #280003;
+  margin-top: 100px;
 }
 /* Services section  */
 .services {
@@ -269,13 +271,13 @@ hr {
   text-align: center;
 }
 .services .services-header .services-header-heading {
-  font-size: 4rem;
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #280003;
 }
 .services .services-header .services-header-desc {
-  font-size: 1.3rem;
+  font-size: 18px;
   line-height: 2rem;
   margin-top: 20px;
 }
@@ -315,15 +317,15 @@ hr {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.13);
-  padding: 10px;
+  padding: 0;
 }
 .services .services-info .service .service-card .service-back {
   transform: rotateY(180deg);
 }
 .services .services-info .service .service-card .service-front i {
-  font-size: 4rem;
+  font-size: 30px;
   color: #280003;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .services
   .services-info
@@ -337,7 +339,7 @@ hr {
   .service-card
   .service-back
   .service-back-heading {
-  font-size: 2.5rem;
+  font-size: 25px;
   text-transform: capitalize;
 }
 .services .services-info .service:hover .service-card {
@@ -349,7 +351,7 @@ hr {
   .service-card
   .service-back
   .service-back-desc {
-  font-size: 1.3rem;
+  font-size: 18px;
   margin-top: 10px;
   text-align: center;
 }
@@ -368,13 +370,13 @@ hr {
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.274);
+  height: 50%;
+  width: 50%;
+  /* background-color: rgba(0, 0, 0, 0.274); */
   z-index: -1;
 }
 .services .services-info .service:nth-child(2) .service-card .service-front i {
-  color: white;
+  color: #280003;
 }
 /* End Services section  */
 
@@ -383,8 +385,8 @@ hr {
   min-height: 10vh;
   flex-direction: column;
   width: 100%;
-  background-color: #eee0cb;
-  padding: 3rem 2rem;
+  background-color: #ebcfb2;
+  padding: 20px;
 }
 .hire .hire-heading {
   color: black;
@@ -392,10 +394,10 @@ hr {
   text-align: center;
 }
 .hire .hire-button {
-  padding: 2rem 3rem;
+  padding: 15px;
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.267);
-  font-size: 1.6rem;
+  font-size: 15px;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2rem;
@@ -416,32 +418,32 @@ hr {
   color: white;
   flex-direction: column;
   text-align: center;
-  padding: 5rem;
+  padding: 25px;
 }
 .footer .footer-contact {
   padding: 20px;
 }
 .footer .footer-contact .footer-contact-heading {
-  font-size: 2.5rem;
+  font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 10px;
 }
 .footer .footer-contact .footer-contact-info {
-  font-size: 1.4rem;
+  font-size: 12px;
   padding-top: 10px;
   letter-spacing: 0.2rem;
 }
 .footer .footer-social-follow .footer-social-icon a {
   color: white;
-  font-size: 3rem;
+  font-size: 15px;
   margin: 0.4rem;
   display: inline-block;
 }
 /* End Footer section  */
 
 /* For desktop */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 750px) {
   .nav-bar .nav-list .hamburger {
     display: none;
   }
@@ -466,16 +468,21 @@ hr {
     align-items: center;
   }
   .hero .hero-info {
-    max-width: 30%;
+    max-width: 40%;
     text-align: left;
+    padding: 0;
   }
+  .hero .hero-info .hero-info-heading {
+    font-size: 45px;
+  }
+
   .hero .hero-info .hero-info-subheading {
-    font-size: 1.3rem;
+    font-size: 20px;
     letter-spacing: 0.5rem;
   }
   .hero .hero-img {
-    min-width: 400px;
-    max-width: 1000px;
+    min-width: 500px;
+    max-width: 250px;
   }
   .about {
     width: 80%;
@@ -486,6 +493,10 @@ hr {
     width: 50%;
     text-align: left;
     padding-right: 17rem;
+  }
+
+  .about .about-info .about-info-desc {
+    font-size: 18px;
   }
   .services .services-header .services-header-desc {
     max-width: 500px;
@@ -499,16 +510,22 @@ hr {
   .services .services-info .service {
     margin: 0;
   }
+  .service-card {
+    padding: 2px;
+    /* border: 0.5px solid #280003; */
+  }
 }
-/* End Media query for desktop and tab  */
+/* End Media query for  and tab  */
 
-/* Media Query For Desktop Only  */
 @media only screen and (min-width: 1200px) {
   .hero .hero-info .hero-info-heading {
-    font-size: 6rem;
+    font-size: 50px;
+  }
+  .hero .hero-img {
+    margin-top: 10px;
   }
   .hero .hero-info .hero-info-subheading {
-    letter-spacing: 0.8rem;
+    letter-spacing: 10px;
   }
 }
 /* End Media Query For Desktop Only  */
